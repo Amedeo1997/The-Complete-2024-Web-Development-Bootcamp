@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+.container {
+    justify-items: center;
+    margin-top: 200px;
+}
+
+h1 {
+    color: yellow;
+}
+
+h2 {
+    color: white
+}
+
+img {
+    width: 1000px;
+    height: 800px;
+    border: 2px solid yellow;
+}
