@@ -1,0 +1,119 @@
+/* Palette di colori */
+:root {
+    --color-primary: #4A628A;
+    --color-secondary: #7AB2D3;
+    --color-background: #B9E5E8;
+    --color-light: #DFF2EB;
+    --color-text: #333333;
+    --color-button: #4A628A;
+    --color-button-hover: #7AB2D3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+
+.password-output {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.password-output input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid var(--color-secondary);
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.password-output button {
+    padding: 0 1rem;
+    border: none;
+    background-color: var(--color-secondary);
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.password-output button:hover {
+    background-color: var(--color-primary);
+}
+
+.controls, .options {
+    margin-bottom: 1rem;
+}
+
+.controls label, .options label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.controls input[type="range"] {
+    width: 100%;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+#generate-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate-btn:hover {
+    background-color: var(--color-secondary);
+}
+
+footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+}
